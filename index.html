@@ -5,13 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
   <title>D$ Farm</title>
 </head>
 
 <body>
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h1 class="col-12">D$ Farm</h1>
+      <h1 id="money-field" class="col-12">Money: $200</h1>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <h1>Corn</h1>
+        <p>Worth: 100</p>
+        <p id="corn-water">Watered: 0</p>
+        <div class="row">
+          <button class="btn btn-primary" onclick="water('corn')">Water</button>
+          <button class="btn btn-success" onclick="harvest('corn')">Harvest</button>
+        </div>
+      </div>
+      <div class="col-6">
+        <h1>Celery</h1>
+        <p>Worth: 5</p>
+        <p id="celery-water">Watered: 0</p>
+        <div class="row">
+          <button class="btn btn-primary" onclick="water('celery')">Water</button>
+          <button class="btn btn-success" onclick="harvest('celery')">Harvest</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
-
+  <script src="app.js"></script>
 </body>
 
 </html>
